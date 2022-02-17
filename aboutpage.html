@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale1.0">
+<link rel="stylesheet" href="hom.css">
+<title>First Website</title>
+<link rel="icon" href="image/tit.jpg">
+</head>
+<body id="abou">
+<div> 
+ <ul>
+<li class="active"><a href="home.html">HOME</a></li>
+<li><a href="myeducation.html">MY EDUCATION</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+<li><a href="aboutpage.html">ABOUT PAGE</a></li>
+ </ul>
+</div>
+<div id="MyClockDisplay" class="clock" onload="showTime()">
+</div>
+<script>
+    function showTime(){
+        var date = new Date();
+        var h= date.getHours();
+        var m= date.getMinutes();
+        var s= date.getSeconds();
+        var session = "AM";
+        if(h==0){
+            h=12;
+        }
+        if(h>12){
+            h= h-12;
+            session = "PM";
+        }
+        h=(h<10) ? "0" + h :h;
+        m=(m<10) ? "0" + m :m;
+        s=(s<10) ? "0" + s :s;
+        var time= h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText=time;
+        document.getElementById("MyClockDisplay").textContent = time;
+        setTimeout(showTime, 1000)
+    }
+    showTime();
+        </script>
+        <br><br><br><br>
+        <h1 id="me">ABOUT ME </h1>
+        <p class="mes"> Name: RAVI SHARMA <br> F/name: GANESH SHARMA<br> D.O.B: 03/05/2001 <br> Gender: MALE <br> NATIONALITY: INDIAN
+        <br> 
+        </p>
+        <h2 id="pag">ABOUT PAGE</h2>
+<p id="page"> I have created this page just to check my knowledge <br>
+and enhance to build my confidence </p>
+
+
+<marquee><p id="creat">THIS PAGE IS CREATED AND DEGISN BY <b style="color: tomato;">RAVI SHARMA</b></style></p></marquee>
+
+
+
+</body>
+</html>

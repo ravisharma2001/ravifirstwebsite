@@ -1,0 +1,167 @@
+body
+{
+    background-color: rgb(0, 0, 0);
+}
+ul
+{
+    margin: 0%;
+    padding: 4%;
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+li{
+
+    float: left;
+    border-right: 1px solid #be2684;
+}
+a{
+    display:block;
+    padding: 0 12px;
+    color: azure;
+    text-decoration: none;
+}
+a:hover,.active a{
+background-color: red;
+
+}
+#firstp{
+    color: aliceblue;
+    font-size: 30px;
+}
+#babe{
+background-image: url("image/myeduc.jpg");
+background-attachment: fixed;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: 0%;
+
+}
+table,th,td{
+border: 1px solid;
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font-size: 15px;
+border-color: rgba(252, 249, 255, 0.651);
+border-collapse: collapse;
+}
+#firstl{
+    background-color: #0b7199;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#had{
+    color: #be2684;
+    font-size: 30px;
+    border-style: ridge;
+    border-width: thin;
+    box-sizing: border-box;
+    background-color: rgb(2, 71, 71);
+}
+#par{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+}
+#parag{
+color: rgb(255, 255, 255);
+font-size: 30px;
+font-weight: bold;
+
+}
+#hadd{
+    color: #be2684;
+    font-size: 30px;
+    border-style: ridge;
+    border-width: thin;
+    box-sizing: border-box;
+    background-color: rgb(4, 71, 49);
+}
+.clock{
+    position: relative;
+    color: rgb(5, 255, 17);
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+letter-spacing: 3px;
+border: #7c540a solid;
+border-width: 10px;
+background-color: rgb(0, 0, 0);
+float:left;
+}
+#but{
+    color: rgba(5, 255, 109, 0.568);
+    background-color: rgb(58, 40, 40);
+   font-size:30px;
+   cursor: pointer;
+}
+#haddi{
+    color: #be2684;
+    font-size: 30px;
+    border-style: ridge;
+    border-width: thin;
+    box-sizing: border-box;
+    background-color: rgb(2, 71, 71);
+}
+#paregr{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    }
+    #con{
+        background-color: #be2684;
+    }
+    #con{
+    background-image: url("image/conta.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+.mailing{
+    position: absolute; left:40%; top: 49%;
+}
+.insta{
+    position: absolute;  
+}
+.faceb{
+    position: absolute; top:70%
+}
+.whatsap{
+    position: absolute; left: 40%; top:70%
+}  
+#abou{
+    background-color: black;
+}
+#me{
+    color: #0b7199;
+    font-size: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+}
+.mes{
+    color: brown;
+    font-size: 20px;
+}
+#pag{
+color: yellow;
+font-size: 35px;
+}
+#page{
+    color: aquamarine;
+    font-size: 20px;
+}
+#creat{
+    color: #ffffff;
+}
+#ravi{
+    color: tomato;
+}
+#headdingh{
+    color: rgb(89, 6, 92);
+    font-size: 20px;
+}

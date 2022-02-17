@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale1.0">
+<link rel="stylesheet" href="hom.css">
+<title>MY EDUCATION</title>
+<link rel="icon" href="image/tit.jpg">
+</head>
+
+<body id="babe">
+    <ul>
+        <li class="active"><a href="home.html">HOME</a></li>
+        <li id="mye"><a href="myeducation.html">MY EDUCATION</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="aboutpage.html">ABOUT PAGE</a></li>
+         </ul>
+         <div id="MyClockDisplay" class="clock" onload="showTime()">
+        </div>
+        <script>
+            function showTime(){
+                var date = new Date();
+                var h= date.getHours();
+                var m= date.getMinutes();
+                var s= date.getSeconds();
+                var session = "AM";
+                if(h==0){
+                    h=12;
+                }
+                if(h>12){
+                    h= h-12;
+                    session = "PM";
+                }
+                h=(h<10) ? "0" + h :h;
+                m=(m<10) ? "0" + m :m;
+                s=(s<10) ? "0" + s :s;
+                var time= h + ":" + m + ":" + s + " " + session;
+                document.getElementById("MyClockDisplay").innerText=time;
+                document.getElementById("MyClockDisplay").textContent = time;
+                setTimeout(showTime, 1000)
+            }
+            showTime();
+                </script>
+         <br><br><br<br><br><br><br>
+<table>
+    
+<tr >
+    <th id="firstl"> Degree/Course</th>
+    <th id="firstl"> Institute/University</th>
+    <th id="firstl"> Year</th>
+</tr>
+
+<tr>
+    <th>10th</th>
+    <th>UKHRUL CENTRAL SCHOOL</th>
+    <th>2018</th>
+</tr>
+<tr>
+    <th>DIPLOMA(E.C)</th>
+    <th>RGPV</th>
+    <th>2021</th>
+</tr>
+<tr>
+    <th>B.TECH(pursuing)</th>
+    <th>RGPV</th>
+    <th>2024</th>
+</tr>
+</table>
+
+<h1 id="had">
+    For 10th detail
+</h1>
+<div id="par">
+<p id="para"> Click on the Click button</p>
+</div>
+
+<button id="but" onclick="myFunction()"> CLICK HERE</button>
+
+<script>
+function myFunction(){
+    document.getElementById("para").innerHTML="I have completed 10th from UKHRUL CENTRAL SCHOOL which is located in UKHRUL, MANIPUR.";
+    document.getElementById("para").style.color="yellow";
+}
+</script>
+<h2 id="hadd">
+    For Diploma detail
+</h2>
+<div id="parr">
+<p id="parag"> Click on the Click button</p>
+</div>
+<button id="but" onclick="myFunc()"> CLICK HERE</button>
+
+<script>
+function myFunc(){
+    document.getElementById("parag").innerHTML="I have completed Diploma from IES college which is located in BHOPAL, MADHYA PRADESH.";
+    document.getElementById("parag").style.color="dark red";
+    document.getElementById("parag").style.fontSize="43px";
+    document.getElementById("parag").style.fontFamily=" 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif";
+}
+
+
+</script>
+<br>
+<h3 id="haddi">
+    For B.tech detail
+</h3>
+<div id="paregr">
+<p id="paragr"> Click on the Click button</p>
+</div>
+
+<button id="but" onclick="myFuncti()"> CLICK HERE</button>
+<script>
+function myFuncti(){
+    document.getElementById("paragr").innerHTML="I'M pursuing right now and I'll complete my B.tech in 2024 from ORIENTAL INSTITUTE OF SCIENCE AND TECHNOOGY which is located in Bhopal, Madhya Pradesh.";
+    document.getElementById("paragr").style.color="red";
+    document.getElementById("paragr").style.fontSize="43px";
+    document.getElementById("paragr").style.fontFamily=" 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"; 
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale1.0">
+<link rel="stylesheet" href="hom.css">
+<title>First Website</title>
+<link rel="icon" href="image/tit.jpg">
+</head>
+<body>
+<div> 
+ <ul>
+<li class="active"><a href="#home">HOME</a></li>
+<li><a href="myeducation.html">MY EDUCATION</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+<li><a href="aboutpage.html">ABOUT PAGE</a></li>
+ </ul>
+</div>
+<div id="MyClockDisplay" class="clock" onload="showTime()">
+</div>
+<script>
+    function showTime(){
+        var date = new Date();
+        var h= date.getHours();
+        var m= date.getMinutes();
+        var s= date.getSeconds();
+        var session = "AM";
+        if(h==0){
+            h=12;
+        }
+        if(h>12){
+            h= h-12;
+            session = "PM";
+        }
+        h=(h<10) ? "0" + h :h;
+        m=(m<10) ? "0" + m :m;
+        s=(s<10) ? "0" + s :s;
+        var time= h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText=time;
+        document.getElementById("MyClockDisplay").textContent = time;
+        setTimeout(showTime, 1000)
+    }
+    showTime();
+        </script>
+        <br><br>
+<P id="firstp"> I have created this website just to practice what i have 
+    learn  and this is my first website<br>
+</P>
+
+<marquee><h1 id="headdingh"> FOR DETAIL YOU CAN CLICK ABOVE NAVIGATION BAR</h1></marquee>
+</body>
+</html>
